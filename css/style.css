@@ -1,0 +1,109 @@
+#chart-area svg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#logo {
+  height:50px;
+}
+
+.navbar-brand {
+  height: 60px;
+  padding: 5px 0px;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #D4D8DA;
+  stroke-width: 2px;
+  shape-rendering: crispEdges;
+}
+
+/* .line {
+  fill: none;
+  stroke-width: 2px;
+} */
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: #F1F3F3;
+  stroke: #777;
+  stroke-width: 3px;
+}
+
+.hover-line {
+  stroke: #777;
+  stroke-width: 2px;
+  stroke-dasharray: 3,3;
+}
+
+#selections .col-md-4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* .line {
+  fill: none;
+  stroke-width: 0.5px;
+  stroke: lightgrey;
+} */
+
+/* TOOLTIP, as per Udemy, Colt II, Section 23, video 261 */
+
+.tooltip {
+  opacity: 1;
+  position: absolute;
+  pointer-events: none;
+  background-color: linen;
+  padding: 5px;
+  border: 1px solid brown;
+  border-radius: 8px;
+}
+
+.tooltip p {
+  font-weight: bold;
+  margin: 0;
+}
+
+.tooltip::before {
+  content: ' ';
+  /* 'ABSOLUTE' AND "%" => containing element is first non-STATIC ancestor's (content + padding) */
+  position: absolute;
+  border: 12px solid transparent;
+  border-bottom-color: brown;
+  top: -25px;
+  left: 50%;
+  margin-left: -11px;
+}
+
+.legend {
+  background-color: linen;
+  padding: 5px;
+  border: 1px solid brown;
+  border-radius: 8px;
+}
+
+.o2-circles {
+  border-radius: 8px;
+  border: 3px solid brown;
+}
+
+#date-slider {
+  width: 590px;
+}
+
+/*Color for the brush */
+/* .brush rect.extent{
+  fill: steelblue;
+  fill-opacity: .125;
+} */

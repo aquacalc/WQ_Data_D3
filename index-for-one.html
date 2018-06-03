@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <title>WQ Data</title>
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- jQuery UI CSS -->
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img id="logo" src="img/logo.png"></a>
+            </div>
+        </nav>
+
+        <!-- Bootstrap grid setup -->
+        <div class="container">
+            <div id="selections" class="row">
+                <div class="col-md-6">
+                    <div id="slider-div">
+                        <label>Date: <span id="dateLabel1">02/06/2012</span> - <span id="dateLabel2">07/08/2012</span></label>
+                        <div id="date-slider"></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <select id="wq-select" class="form-control">
+                        <option value='wq' disabled>-- Water Quality --</option>
+                        <option value="temp" selected>Temperature (C)</option>
+                        <option value="sal">Salinity (ppt)</option>
+                        <option value="ph">pH (NBS)</option>
+                        <option value="uia.posto">UIA (%)</option>
+                        <option value="co2.mgL">CO2 (mg/L)</option>
+                        <option value="o2.hg">O2 (mm Hg)</option>
+                        <option value='shrimp' disabled>-- Shrimp Stock --</option>
+                        <option value="count.lb.tails">Market Size (tails/lb)</option>
+                        <option value="wbar">w-bar (g/shrimp)</option>
+                        <option value="FCR">FCR (dimensionless)</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select id="tank-select" class="form-control">
+                        <option selected value="rw1">RW-1</option>
+                        <option value="rw2">RW-2</option>
+                        <option value="rw3">RW-3</option>
+                        <option value="rw4">RW-4</option>
+                        <option value="rw5">RW-5</option>
+                        <option value="rw6">RW-6</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4" id="chart-area"></div>
+            </div>
+        </div>
+
+    <!-- External JS libraries -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/LineChart_WQ_Data.js"></script>
+    <script src="js/main.js"></script>
+
+    </body>
+</html>
